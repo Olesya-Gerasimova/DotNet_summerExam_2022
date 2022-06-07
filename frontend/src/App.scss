@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body, input {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  max-width: 350px;
+  padding: 5px 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  input {
+    margin: 4px 0;
+  }
+  input, label, select, button {
+    font-size: 18px;
+  }
+  input[type=text], input[type=range], select {
+    width: 100%;
+  }
+  label {
+    user-select: none;
+  }
+  p {
+    width: 100%;
+    word-wrap: break-word;
+  }
+  span {
+    color: red;
+  }
+  button {
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+.passport {
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+  .full {
+    width: 100%;
+  }
+  .small {
+    width: 80px;
+  }
+  .medium {
+    width: calc(100% - 80px);
+  }
+}
+
+.result {
+  width: 100%;
+  padding: 10px;
+  b, p {
+    width: 100%;
+  }
+  .accepted {
+    color: green;
+  }
+  .denied {
+    color: red;
+  }
+}
